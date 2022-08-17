@@ -13,3 +13,8 @@ def start_delivery(state, event):
     return state | {
         "status":"active"
     }
+
+CONSUMERS= {
+    "CREATE_DELIVERY":create_delivery,
+    "START_DELIVERY":start_delivery
+}
